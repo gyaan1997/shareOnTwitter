@@ -1,0 +1,104 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "philosopher": "Socrates",
+      "quote": "The only true wisdom is in knowing you know nothing."
+    },
+    {
+      "id": 2,
+      "philosopher": "Plato",
+      "quote": "Wise men speak because they have something to say; fools because they have to say something."
+    },
+    {
+      "id": 3,
+      "philosopher": "Aristotle",
+      "quote": "It is the mark of an educated mind to be able to entertain a thought without accepting it."
+    },
+    {
+      "id": 4,
+      "philosopher": "Confucius",
+      "quote": "It does not matter how slowly you go as long as you do not stop."
+    },
+    {
+      "id": 5,
+      "philosopher": "Epictetus",
+      "quote": "We have two ears and one mouth so that we can listen twice as much as we speak."
+    },
+    {
+      "id": 6,
+      "philosopher": "Chanakya",
+      "quote": "A person should not be too honest. Straight trees are cut first and honest people are screwed first."
+    },
+    {
+      "id": 7,
+      "philosopher": "Swami Vivekananda",
+      "quote": "Arise, awake, and stop not until the goal is achieved."
+    },
+    {
+      "id": 8,
+      "philosopher": "Mahatma Gandhi",
+      "quote": "Be the change that you wish to see in the world."
+    },
+    {
+      "id": 9,
+      "philosopher": "Rabindranath Tagore",
+      "quote": "You can't cross the sea merely by standing and staring at the water."
+    },
+    {
+      "id": 10,
+      "philosopher": "Adi Shankaracharya",
+      "quote": "The soul is the same in all living creatures, although the body of each is different."
+    },
+    {
+      "id": 11,
+      "philosopher": "Gautama Buddha",
+      "quote": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment."
+    },
+    {
+      "id": 12,
+      "philosopher": "Sri Aurobindo",
+      "quote": "True knowledge is not attained by thinking. It is what you are; it is what you become."
+    },
+    {
+      "id": 13,
+      "philosopher": "Jiddu Krishnamurti",
+      "quote": "The ability to observe without evaluating is the highest form of intelligence."
+    },
+    {
+      "id": 14,
+      "philosopher": "Vivekachudamani",
+      "quote": "Realize that the Atman is the same in all and ever free."
+    },
+    {
+      "id": 15,
+      "philosopher": "Bhagavad Gita",
+      "quote": "Yoga is the journey of the self, through the self, to the self."
+    },
+    {
+      "id": 16,
+      "philosopher": "Chanakya",
+      "quote": "Before you start some work, always ask yourself three questions: Why am I doing it? What the results might be? And will I be successful? Only when you think deeply and find satisfactory answers to these questions, go ahead."
+    },
+    {
+      "id": 17,
+      "philosopher": "Rabindranath Tagore",
+      "quote": "Let your life lightly dance on the edges of Time like dew on the tip of a leaf."
+    },
+    {
+      "id": 18,
+      "philosopher": "Swami Vivekananda",
+      "quote": "In a conflict between the heart and the brain, follow your heart."
+    },
+    {
+      "id": 19,
+      "philosopher": "Mahatma Gandhi",
+      "quote": "The best way to find yourself is to lose yourself in the service of others."
+    },
+    {
+      "id": 20,
+      "philosopher": "Acharya Chanakya",
+      "quote": "He who is overly attached to his family members experiences fear and sorrow, for the root of all grief is attachment. Thus one should discard attachment to be happy."
+    }
+  ]
+}
