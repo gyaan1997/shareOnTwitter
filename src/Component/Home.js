@@ -4,8 +4,9 @@ import "./home.css";
 import TwitterButton from "./twitterButton";
 function Home() {
   const [data, setData] = useState([]);
-  const [selectedtext, setselectedText] = useState("");
-  
+  const [selectedText, setSelectedText] = useState("");
+  const [buttonPosition,setButtonPosition]=useState(null)
+  const [showTwitterButton,setShowTwitterButton]=useState(false)
   useEffect(() => {
     const fetchData = () => {
       try {
@@ -18,11 +19,26 @@ function Home() {
 
     fetchData();
   }, []);
+
   const handleTextSelection = () => {
-    const selectedText = window.getSelection().toString();
-    setselectedText(selectedText);
-    // console.log(selectedText)
+    const selection = window.getSelection();
+    const selectedText = selection.toString().trim();
+  
+    if (selectedText) {
+      const range = selection.getRangeAt(0);
+      const rect = range.getBoundingClientRect();
+  
+      const buttonTop = rect.top + window.pageYOffset - 50;
+      const buttonLeft = rect.left + window.pageXOffset ;
+  
+      setButtonPosition({ top: buttonTop, left: buttonLeft });
+      setShowTwitterButton(true);
+      setSelectedText(selectedText);
+    } else {
+      setShowTwitterButton(false);
+    }
   };
+  
 
   return (
     <div onMouseUp={handleTextSelection}>
@@ -31,15 +47,18 @@ function Home() {
           <li key={quote.id}>
             <p> {quote.quote}</p>
             <span>:~ {quote.philosopher}</span>
-            {selectedtext && (
-              <TwitterButton
-                // style={{
-                //   top: selectionPosition.top,
-                //   left: selectionPosition.left,
-                // }}
-                text={selectedtext}
-              />
-            )}
+            {showTwitterButton && (
+        <div
+          style={{
+            position: "absolute",
+            top: buttonPosition.top,
+            left: buttonPosition.left,
+          
+          }}
+        >
+          <TwitterButton text={selectedText} />
+        </div>
+      )}
           </li>
         ))}
       </ul>
@@ -48,20 +67,3 @@ function Home() {
 }
 
 export default Home;
-
-// const handleTextSelection = () => {
-//   const selection = window.getSelection();
-//   if (selection.rangeCount > 0) {
-//     const range = selection.getRangeAt(0);
-//     const rect = range.getBoundingClientRect();
-//     console.log("Selection Coordinates:", rect);
-
-//     const buttonTop = rect.top + window.pageYOffset - 30; 
-//     const buttonLeft = rect.left + window.pageXOffset + rect.width / 2;
-//     setButtonPosition({ top: buttonTop, left: buttonLeft });
-//     setShowTwitterButton(true);
-//   }
-
-//   const selectedText = selection.toString();
-//   setSelectedText(selectedText);
-// };

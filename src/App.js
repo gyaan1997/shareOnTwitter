@@ -7,7 +7,7 @@ function App() {
         <div
        className="header"
       >
-        <h2>Copy quotes and share it on X</h2>
+        <h2>Copy quotes and share it on Twitter</h2>
       </div>
       <Home/>
     </div>

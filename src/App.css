@@ -4,12 +4,13 @@ background-color: #f0ece2;
 }
 .header{
   width: 100%;
-  background-Color: #847663;
-  border:1px solid black;
-  color: rgb(230, 226, 222);
+  border: 1px solid #c4c1e0;
+  background-Color: #c4c1e0;
+  color: rgb(19, 19, 18);
 position: static;
 }
 h2{
   font-size: 4vh;
-  font-weight: 300; 
+  font-weight: 400; 
+  word-spacing: 6px;
 }
